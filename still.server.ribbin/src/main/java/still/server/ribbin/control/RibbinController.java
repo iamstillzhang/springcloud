@@ -14,7 +14,7 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class RibbinController {
     private static Logger LOGGER = LoggerFactory.getLogger(RibbinController.class);
-   
+      
     @Autowired
     private RestTemplate restTemplate;
     @Autowired
