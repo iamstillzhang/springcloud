@@ -27,6 +27,7 @@ public class Application {
     @Bean
     IRule rule()
     {
+        //
         return new com.netflix.loadbalancer.RandomRule();
     }
 }
