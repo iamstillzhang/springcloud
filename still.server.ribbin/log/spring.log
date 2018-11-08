@@ -2452,3 +2452,56 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 ]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@2085b9
 2018-11-08 10:14:04.089  INFO 17084 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2018-11-08 10:19:04.091  INFO 17084 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-08 13:05:58.436  INFO 7700 --- [main] still.server.ribbin.Application          : No active profile set, falling back to default profiles: default
+2018-11-08 13:05:59.472  INFO 7700 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=84d190ae-ee8b-3817-b9a4-392b0825a96f
+2018-11-08 13:05:59.555  INFO 7700 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8f974036] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-08 13:06:00.050  INFO 7700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2018-11-08 13:06:00.073  INFO 7700 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-08 13:06:00.075  INFO 7700 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-11-08 13:06:00.083  INFO 7700 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_91\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;D:\Program Files\NetBeans Dev 201609140002\extide\ant\bin\;C:\Program Files\Java\jdk1.6.0_45\bin;D:\Program Files\Go\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Users\pradmin\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\pradmin\AppData\Local\Programs\Fiddler;C:\Program Files\Python36;C:\Program Files\Python36\Scripts;.]
+2018-11-08 13:06:00.263  INFO 7700 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-08 13:06:00.271  INFO 7700 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1805 ms
+2018-11-08 13:06:00.315  INFO 7700 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-08 13:06:00.323  INFO 7700 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-08 13:06:00.323  INFO 7700 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-08 13:06:00.324  INFO 7700 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-11-08 13:06:00.325  INFO 7700 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-08 13:06:00.463  WARN 7700 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-11-08 13:06:00.465  INFO 7700 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-11-08 13:06:00.484  WARN 7700 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-11-08 13:06:00.484  INFO 7700 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-11-08 13:06:00.812  INFO 7700 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-11-08 13:06:01.477  INFO 7700 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-11-08 13:06:01.531  INFO 7700 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-11-08 13:06:01.836  INFO 7700 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-11-08 13:06:01.836  INFO 7700 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-11-08 13:06:01.960  INFO 7700 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-11-08 13:06:01.960  INFO 7700 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-11-08 13:06:02.188  INFO 7700 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-08 13:06:02.297  INFO 7700 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-11-08 13:06:02.297  INFO 7700 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-11-08 13:06:02.297  INFO 7700 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-11-08 13:06:02.297  INFO 7700 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-11-08 13:06:02.297  INFO 7700 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-11-08 13:06:02.298  INFO 7700 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-11-08 13:06:02.298  INFO 7700 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-11-08 13:06:02.536  INFO 7700 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-11-08 13:06:02.542  INFO 7700 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-11-08 13:06:02.545  INFO 7700 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-11-08 13:06:02.550  INFO 7700 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1541653562549 with initial instances count: 2
+2018-11-08 13:06:02.675  INFO 7700 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application still.server.ribbin with eureka with status UP
+2018-11-08 13:06:02.677  INFO 7700 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1541653562676, current=UP, previous=STARTING]
+2018-11-08 13:06:02.678  INFO 7700 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STILL.SERVER.RIBBIN/SZPMOZHANGXH1.transsion.com:still.server.ribbin:9003: registering service...
+2018-11-08 13:06:02.734  INFO 7700 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_STILL.SERVER.RIBBIN/SZPMOZHANGXH1.transsion.com:still.server.ribbin:9003 - registration status: 204
+2018-11-08 13:06:02.737  INFO 7700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2018-11-08 13:06:02.738  INFO 7700 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9003
+2018-11-08 13:06:02.741  INFO 7700 --- [main] still.server.ribbin.Application          : Started Application in 6.461 seconds (JVM running for 7.501)
+2018-11-08 13:06:06.118  INFO 7700 --- [http-nio-9003-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-11-08 13:06:06.119  INFO 7700 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-11-08 13:06:06.131  INFO 7700 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2018-11-08 13:06:12.184  INFO 7700 --- [http-nio-9003-exec-4] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-still.server.demo1
+2018-11-08 13:06:12.221  INFO 7700 --- [http-nio-9003-exec-4] c.netflix.loadbalancer.BaseLoadBalancer  : Client: still.server.demo1 instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=still.server.demo1,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2018-11-08 13:06:12.231  INFO 7700 --- [http-nio-9003-exec-4] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2018-11-08 13:06:12.276  INFO 7700 --- [http-nio-9003-exec-4] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client still.server.demo1 initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=still.server.demo1,current list of Servers=[10.250.160.69:9001],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:10.250.160.69:9001;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@d3ef608
