@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
  *
  * @author xinhui.zhang
  */
-@FeignClient("still.server.demo1")
-public interface Client {
+@FeignClient("STILL.SERVER.DEMO1")
+public interface ClientDemo1 {
     @RequestMapping(method = RequestMethod.GET, value = "/ip")
     public  String  getIP();
 }

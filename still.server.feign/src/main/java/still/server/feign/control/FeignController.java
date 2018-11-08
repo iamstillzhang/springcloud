@@ -6,14 +6,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestClientException;
-import still.server.feign.model.Client;
+import still.server.feign.model.ClientDemo1;
 
 @RestController
 public class FeignController {
     private static Logger LOGGER = LoggerFactory.getLogger(FeignController.class);
       
     @Autowired
-    Client clientDemo1;
+    ClientDemo1 clientDemo1;
 
     @RequestMapping("/test1")
     public String test1() {
