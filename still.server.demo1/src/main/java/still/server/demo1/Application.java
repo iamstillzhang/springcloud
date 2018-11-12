@@ -1,6 +1,7 @@
 package still.server.demo1;
 
 import java.net.InetAddress;
+import java.net.UnknownHostException;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
@@ -32,6 +33,19 @@ public class Application {
     public String name() {
         return "still.server.demo1";
     }
+    
+    @RequestMapping("/user")
+    public String user() {
+        String host = null;
+        try {
+            host = InetAddress.getLocalHost().getHostAddress();
+        } catch (UnknownHostException e) {
+            System.out.println("get server host Exception e:"+ e.toString());
+        } 
+        return "{\"age\":105,\"id\":\"testFastJson001\",\"name\":\"maks\"}";
+        //return String.format("{\"name\":\"still.server.demo1\",\"ip\":\"%s\",\"port\":%d}",
+        //        host, 9001);
+    }
 
     @RequestMapping("/ip")
     public String ip() {
@@ -39,6 +53,8 @@ public class Application {
 
         try {
             host = InetAddress.getLocalHost().getHostAddress();
+        } catch (UnknownHostException e) {
+            System.out.println("get server host Exception e:"+ e.toString());
         } catch (Exception e) {
             System.out.println("get server host Exception e:"+ e.toString());
         }
