@@ -17,4 +17,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public interface ClientDemo1 {
     @RequestMapping(method = RequestMethod.GET, value = "/ip")
     public  String  getIP();
+    
+    @RequestMapping(method = RequestMethod.GET, value = "/user")
+    public  Demo1User  getUser();
 }

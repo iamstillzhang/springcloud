@@ -25,9 +25,26 @@ public class FeignController {
             res.append(String.format("ERROR:%s<br>" , e.toString()));
         }
         catch (Exception e) {
-            res.append(String.format("ERROR:%s<br>" , e.toString()));
+            res.append(String.format("ERROR:%s<br> " , e.toString()));
         }
         return res.toString();
     }
+    
+     @RequestMapping("/test2")
+    public String test2() {
+        StringBuilder res;
+        res = new StringBuilder();
+        try {
+            clientDemo1.getUser();
+            res.append(String.format("still.server.demo1/ip:%s<br>" ,clientDemo1.getIP()));
+        } catch (RestClientException e) {
+            res.append(String.format("ERROR:%s<br>" , e.toString()));
+        }
+        catch (Exception e) {
+            res.append(String.format("ERROR:%s<br>" , e.toString()));    
+        }
+        return res.toString();
+    }
+    
 
 }
