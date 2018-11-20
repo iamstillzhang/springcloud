@@ -42,7 +42,7 @@ public class Application {
         } catch (UnknownHostException e) {
             System.out.println("get server host Exception e:"+ e.toString());
         } 
-        return "{\"age\":105,\"id\":\"testFastJson001\",\"name\":\"maks\"}";
+        return "{name:222}";
         //return String.format("{\"name\":\"still.server.demo1\",\"ip\":\"%s\",\"port\":%d}",
         //        host, 9001);
     }

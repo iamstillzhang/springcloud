@@ -20,4 +20,7 @@ public interface ClientDemo1 {
     
     @RequestMapping(method = RequestMethod.GET, value = "/user")
     public  Demo1User  getUser();
+    
+    @RequestMapping(method = RequestMethod.GET, value = "/user")
+    public  String  getUser2();
 }

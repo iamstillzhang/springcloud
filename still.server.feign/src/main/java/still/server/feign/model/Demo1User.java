@@ -10,7 +10,5 @@ package still.server.feign.model;
  * @author xinhui.zhang
  */
 public class Demo1User {
-     String name;
-     String ip; 
-     int port;
+     int name;
 }

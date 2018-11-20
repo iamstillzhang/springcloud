@@ -35,6 +35,8 @@ public class FeignController {
         StringBuilder res;
         res = new StringBuilder();
         try {
+            res.append(String.format("JSON:%s<br>" ,clientDemo1.getUser2()));
+            FastJson json = new 
             clientDemo1.getUser();
             res.append(String.format("still.server.demo1/ip:%s<br>" ,clientDemo1.getIP()));
         } catch (RestClientException e) {
